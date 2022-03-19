@@ -35,7 +35,6 @@ a.title {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     cursor: default;
     max-width: 200px;
 }
@@ -64,6 +63,11 @@ nav ul li a {
     color: #E6E6E6;
     font-size: 1.5rem;
     text-transform: uppercase;
+    transition: all .6s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000;
 }
 
 main {
@@ -125,7 +129,7 @@ section#cards div.card img {
 
 section#cards div.card a#modificar {
     padding: .5rem;
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -190,4 +194,10 @@ footer p a {
     text-decoration: none;
     color: rosybrown;
     font-weight: 600;
+    transition: all .6s ease-in-out;
+}
+
+footer p a:hover {
+    color: #E6E6E6;
+    font-weight: bold;
 }

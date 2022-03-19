@@ -119,5 +119,10 @@ footer p a {
     text-decoration: none;
     color: rosybrown;
     font-weight: 600;
+    transition: all .6s ease-in-out;
+}
 
+footer p a:hover {
+    color: #E6E6E6;
+    font-weight: bold;
 }
