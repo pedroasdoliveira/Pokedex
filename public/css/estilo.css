@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("/img/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+nav {
+    background-color: #E94848;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border: solid 3px #9B4B4A;
+    box-shadow: 5px 5px 10px 8px #dc0a2d;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+a.title {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: default;
+    max-width: 200px;
+}
+
+a.title h1 {
+    color: #000;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: .5rem;
+    padding: 0 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    padding: .2rem 1.2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E6E6E6;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 0 6rem;
+}
+
+main button {
+    display: flex;
+    margin: 0 auto;
+}
+
+section#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6rem 0;
+}
+
+section#cards h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+section#cards div.card {
+    width: 28%;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: #dc0a2d;
+    border: solid 6px #000;
+    border-radius: 30px;
+    transition: all .6s ease-in-out;
+    cursor: default;
+}
+
+section#cards div.card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 5px #000;
+}
+
+section#cards div.card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section#cards div.card p.numero {
+    text-align: center;
+    margin-top: .5rem;
+    color: #E6E6E6;
+}
+
+section#cards div.card img {
+    width: 100%;
+    margin: auto 0;
+    padding-bottom: 1.5rem;
+}
+
+section#cards div.card a#modificar {
+    padding: .5rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    background-color: #E6E6E6;
+    border: solid 5px #22B598;
+    color: #22B598;
+    cursor: pointer;
+    transition: all .5s ease-in-out ;
+    text-decoration: none;
+}
+
+section#cards div.card a#modificar:hover {
+    background-color: #22B598;
+    color: #E6E6E6;
+    border: solid 6px #dc0a2d;
+}
+
+a#cadastro {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+    max-width: 500px;
+    width: 100%;
+    background-color: #E94848;
+    padding: .6rem;
+    border: solid 5px #9B4B4A;
+    border-radius: 25px;
+    transition: all .6s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+a#cadastro:hover {
+    transform: scale(1.2);
+    border: solid 5px #E94848;
+    background-color: #9B4B4A;
+    color: #E6E6E6;
+}
+
+footer {
+    background-color: #E94848;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+footer p {
+    width: 100%;
+    color: #E6E6E6;
+    text-align: center;
+    font-size: 1rem;
+    padding: .3rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rosybrown;
+    font-weight: 600;
+}

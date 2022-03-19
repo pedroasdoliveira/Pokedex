@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title>Detalhes</title>
+</head>
+<body>
+    <main>
+
+        <section id="cards">
+
+            <h2>Informações do Pokemom</h2>
+
+            <div class="card">
+                <h3><%= escolhido.nome %></h3>
+                <p class="numero">#<%= escolhido.id %></p>
+                <img src="<%= escolhido.visual %>" alt="">
+                <p>Tipo: <%= escolhido.tipo %></p>
+                <p>Fraqueza: <%= escolhido.fraqueza %></p>
+                <p class="descricao"><%= escolhido.sobre %></p>
+                <p>Evolução: <%= escolhido.evolucao %></p>
+                <p>Altura: <%= escolhido.altura %></p>
+                <p>Peso: <%= escolhido.peso %></p>
+                <p>Categoria: <%= escolhido.categoria %></p>
+                <p>Habilidades: <%= escolhido.habilidade %></p>
+                <p class="status">Status:</p>
+                <p>Ataque: <%= escolhido.ataque %></p>
+                <p>Defesa: <%= escolhido.defesa %></p>
+                <p>Stamina: <%= escolhido.stamina %></p>
+            </div>
+
+        </section>
+
+        <!-- <section>
+
+            <div>
+
+                <% if (escolhido == escolhido.id) { %>
+                    <h2>Editar Pokemon</h2>
+
+                    <form action="/updated/<%= escolhido.id %>" method="post">
+
+                        <label for="nome">
+                            Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" required>
+    
+                        <label for="visual">
+                            Link da imagem:
+                        </label>
+                        <input type="text" name="visual" id="visual" required>
+    
+                        <label for="tipo">
+                            Tipo do Pokemon:
+                        </label>
+                        <input type="text" name="tipo" id="tipo" required>
+    
+                        <label for="fraqueza">
+                            Fraquesas do Pokemon:
+                        </label>
+                        <input type="text" name="fraqueza" id="fraqueza" required>
+    
+                        <label for="sobre">
+                            Descrição:
+                        </label>
+                        <input type="text" name="sobre" id="sobre">
+    
+                        <label for="evolucao">
+                            Evolução do Pokemon:
+                        </label>
+                        <input type="text" name="evolucao" id="evolucao" required>
+    
+                        <label for="altura">
+                            Altura:
+                        </label>
+                        <input type="text" name="altura" id="altura" required>
+    
+                        <label for="peso">
+                            Peso:
+                        </label>
+                        <input type="text" name="peso" id="peso" required>
+    
+                        <label for="categoria">
+                            Categoria:
+                        </label>
+                        <input type="text" name="categoria" id="categoria">
+    
+                        <label for="habilidade">
+                            Habilidades:
+                        </label>
+                        <input type="text" name="habilidade" id="habilidade">
+    
+                        <label for="ataque">
+                            Ataque:
+                        </label>
+                        <input type="number" name="ataque" id="ataque">
+    
+                        <label for="defesa">
+                            Defesa:
+                        </label>
+                        <input type="number" name="defesa" id="defesa">
+    
+                        <label for="stamina">
+                            Stamina
+                        </label>
+                        <input type="number" name="stamina" id="stamina">
+    
+                        <button id="btnCadastrar" type="submit">Editar</button>
+
+                    </form>
+                <% } %>
+
+            </div>
+
+        </section> -->
+
+        <a id="voltar" href="/voltar">Voltar</a>
+        
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy;</p>
+        <p>Dados retirados de <a href="https://www.pokemon.com/br/pokedex/" target="_blank">www.pokemon.com/br/pokedex</a> e <a href="https://pokemon.gameinfo.io/pt-br" target="_blank">pokemon.gameinfo.io/pt-br/pokemon</a></p>
+    </footer>
+    
+</body>
+</html>

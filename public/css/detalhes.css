@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("/img/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+section#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6rem 0;
+}
+
+section#cards h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+section#cards div.card {
+    width: 28%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #dc0a2d;
+    border: solid 6px #000;
+    border-radius: 30px;
+    transition: all .6s ease-in-out;
+    cursor: default;
+}
+
+section#cards div.card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 5px #000;
+}
+
+section#cards div.card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section#cards div.card p {
+    color: #E6E6E6;
+    line-height: 1.5rem;
+}
+
+section#cards div.card p.numero {
+    text-align: center;
+    margin-top: .5rem;
+}
+
+section#cards div.card p.status {
+    text-align: center;
+    margin-top: 1rem;
+    color: #000;
+}
+
+section#cards div.card img {
+    width: 100%;
+    margin: auto 0;
+    padding-bottom: 1.5rem;
+}
+
+a#voltar {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+    max-width: 500px;
+    width: 100%;
+    background-color: #E94848;
+    padding: .6rem;
+    border: solid 5px #9B4B4A;
+    border-radius: 25px;
+    transition: all .6s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+a#voltar:hover {
+    transform: scale(1.2);
+    border: solid 5px #E94848;
+    background-color: #9B4B4A;
+    color: #E6E6E6;
+}
+
+footer {
+    background-color: #E94848;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+footer p {
+    width: 100%;
+    color: #E6E6E6;
+    text-align: center;
+    font-size: 1rem;
+    padding: .3rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rosybrown;
+    font-weight: 600;
+
+}

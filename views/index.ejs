@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <nav>
+
+        <a class="title" href="/"><h1>Pokedex</h1></a>
+
+        <ul>
+            <li><a href="#cards">Pokemons</a></li>
+            <li><a href="#cadastro">Adicionar</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section id="cards">
+
+            <h2>Informações dos Pokemons</h2>
+
+            <% Pokedex.forEach((pokemon) => { %>
+                <div class="card">
+                    <h3><%= pokemon.nome %></h3>
+                    <p class="numero">#<%= pokemon.id %></p>
+                    <img src="<%= pokemon.visual %>" alt="">
+                    <!-- <p>Tipo: <%= pokemon.tipo %></p>
+                    <p>Fraqueza: <%= pokemon.fraqueza %></p>
+                    <p class="descricao"><%= pokemon.sobre %></p>
+                    <p>Evolução: <%= pokemon.evolucao %></p>
+                    <p class="status">Status:</p>
+                    <p>Ataque: <%= pokemon.ataque %></p>
+                    <p>Defesa: <%= pokemon.defesa %></p>
+                    <p>Stamina: <%= pokemon.stamina %></p> -->
+                    <a id="modificar" href="/modificar/<%= pokemon.id %>">Detalhes</a>
+                </div>
+            <% }) %>
+
+        </section>
+
+        <a id="cadastro" href="/add">Adicionar Pokemon!</a>
+        
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy;</p>
+        <p>Dados retirados de <a href="https://www.pokemon.com/br/pokedex/" target="_blank">www.pokemon.com/br/pokedex</a> e <a href="https://pokemon.gameinfo.io/pt-br" target="_blank">pokemon.gameinfo.io/pt-br/pokemon</a></p>
+    </footer>
+
+</body>
+</html>

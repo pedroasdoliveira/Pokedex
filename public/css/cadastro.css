@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-image: url("/img/pokedex.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: 0 10rem;
+}
+
+section#cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section#cadastro h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: #262722;
+}
+
+section#cadastro form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+section#cadastro form label {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+section#cadastro form input {
+    background-color: #262722;
+    width: 100%;
+    padding: .6rem;
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem;
+    outline: none;
+    border: solid 1px #F9F9F9;
+    border-radius: 10px;
+}
+
+section#cadastro form button {
+    padding: .5rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    background-color: #262722;
+    border: solid 5px #dc0a2d;
+    color: #dc0a2d;
+    cursor: pointer;
+    transition: all .6s ease-in-out ;
+}
+
+section#cadastro form button:hover {
+    background-color: #dc0a2d;
+    color: #262722;
+    border: solid 5px #262722;
+}
+
+a#voltar {
+    padding: .5rem;
+    width: 30%;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    background-color: #262722;
+    border: solid 5px #dc0a2d;
+    color: #dc0a2d;
+    cursor: pointer;
+    transition: all .6s ease-in-out ;
+}
+
+a#voltar:hover {
+    background-color: #dc0a2d;
+    color: #262722;
+    border: solid 5px #262722;
+}
