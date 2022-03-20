@@ -157,6 +157,14 @@ app.get('/modificar/:id', (req, res) => {
     res.render('detalhes', {escolhido});
 });
 
+// app.get('/delete:id', (req, res) => {
+//     const id = +req.params.id - 1;
+    
+//     delete Pokedex[id]
+
+//    res.redirect("/#cards")
+// })
+
 // app.post("/updated/:id", (req, res) => {
 //     const id = +req.params.id - 1;
 
