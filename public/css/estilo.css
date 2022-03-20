@@ -100,9 +100,11 @@ section#cards div.card {
     margin-bottom: 2.5rem;
     background-color: #dc0a2d;
     border: solid 6px #000;
-    border-radius: 30px;
+    border-radius: 35px;
     transition: all .6s ease-in-out;
     cursor: default;
+    opacity: 80%;
+    border: solid 10px #E6E6E6;
 }
 
 section#cards div.card:hover {
