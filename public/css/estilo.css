@@ -203,3 +203,52 @@ footer p a:hover {
     color: #E6E6E6;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 940px) and (min-width: 890px) {
+    body {
+        background-image: url('/img/wallpaper_media.jpg');
+    }
+
+    section#cards div.card a#modificar {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 890px) and (min-width: 648px) {
+    section#cards div.card {
+        width: 46%;
+    }
+
+    section#cards div.card a#modificar {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    body {
+        background-image: url('/img/wallpaper_pequena.jpg');
+        background-size: contain;
+        background-position: center;
+        background-color: #E94848;
+    }
+
+    a.title h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section#cards h2 {
+        font-size: 1.8rem;
+    }
+
+    section#cards div.card h3 {
+        font-size: 1.3rem;
+    }
+
+    section#cards div.card {
+        width: 78%;
+    }
+}
